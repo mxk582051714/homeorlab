@@ -21,6 +21,9 @@ public class Solution1 {
 			}
 		}
 	}
+	/**
+	 *function2实现简单选择排序
+	 */
 	
 	
 	/**
