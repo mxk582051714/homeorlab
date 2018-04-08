@@ -6,7 +6,7 @@ public class Solution1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int [] arr= {5,4,6,3,2};
+		int [] arr= {10,-2,5,4,6,3,2,1};
 		function1(arr);
 		System.out.println(Arrays.toString(arr));
 	}
@@ -22,8 +22,22 @@ public class Solution1 {
 		}
 	}
 	/**
-	 *function2实现简单选择排序
+	 *function2实现简单选择排序,时间复杂度O（n2）,空间复杂度O（1）
 	 */
+	public static void function2(int [] arr) {
+		for(int i=0;i<arr.length-1;i++) {
+			int minindex=i;
+			for(int j=i+1;j<arr.length;j++) {
+				if(arr[j]<arr[minindex])
+					minindex=j;
+			}
+			if(minindex!=i)
+				swap(arr,minindex,i);
+		}
+	}
+	
+	
+	
 	
 	
 	/**
